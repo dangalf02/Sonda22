@@ -1,1 +1,11 @@
+Medicion de voltaje:
+
+float Voltaje = 0.0;
+
+int valor = analogRead(A0);
+Voltaje = (valor * 5.0) / 1024.0; // deberia multiplicarse valor *10 considerando divisor resistivo (/2) si se mide panel solar (mas de 5V)
+   if (Voltaje < 0.1) 
+   {     Voltaje=0.0;   } 
+
+**************************************
 
