@@ -11,4 +11,6 @@ Voltaje = (valor * 5.0) / 1024.0; // deberia multiplicarse valor *10 considerand
 
 Datos en Web:
 https://thingspeak.com/
+
 https://thingsboard.io
+https://thingsboard.io/docs/samples/arduino/temperature/
