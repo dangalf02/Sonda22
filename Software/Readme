@@ -12,7 +12,7 @@ Voltaje = (valor * 5.0) / 1024.0; // deberia multiplicarse valor *10 considerand
 Datos en Web:
 https://thingspeak.com/
 
-https://thingsboard.io
+https://thingsboard.io    dacom@   Puerta18$
 https://thingsboard.io/docs/samples/esp8266/temperature/
 https://thingsboard.io/docs/samples/esp8266/gpio/
 
