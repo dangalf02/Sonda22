@@ -13,6 +13,15 @@ Datos en Web:
 https://thingspeak.com/
 
 https://thingsboard.io    dacom@   Puerta18$
+https://demo.thingsboard.io/api/noauth/activate?activateToken=XwG2D5tvoc5V8mrFbfnFQw1B6JS0qr
+
+Temp
+curl -v -X POST -d "{\"TempTest01\": 25}" https://demo.thingsboard.io/api/v1/gjmhlFJzDQzn20oEFmX1/telemetry --header "Content-Type:application/json"
+
+Voltaje  dj4CkDAnyLDgtVcgcBtI
+curl -v -X POST -d "{\"Voltaje\": 10}" https://demo.thingsboard.io/api/v1/dj4CkDAnyLDgtVcgcBtI/telemetry --header "Content-Type:application/json"
+
+
 https://thingsboard.io/docs/samples/esp8266/temperature/
 https://thingsboard.io/docs/samples/esp8266/gpio/
 
