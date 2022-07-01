@@ -29,3 +29,35 @@ https://thingsboard.io/docs/samples/esp8266/temperature/
 https://thingsboard.io/docs/samples/esp8266/gpio/
 
 https://thingsboard.io/docs/samples/arduino/temperature/
+
+******************************************************
+//*****   Para Funcion Temp  ******* 
+#include <OneWire.h> 
+#include <DallasTemperature.h>
+/********************************************************************/
+#define ONE_WIRE_BUS 4      // En PIN D4 
+OneWire oneWire(ONE_WIRE_BUS); 
+DallasTemperature Dallas(&oneWire);
+float temp;
+/********************************************************************/ 
+void setup(void) 
+{ 
+ Serial.begin(9600); 
+ Serial.println("Dallas Temperature IC Control Library Demo"); 
+ Dallas.begin(); 
+} 
+void loop(void) 
+{ 
+Serial.print(" Pido Temp"); 
+Dallas.requestTemperatures(); // Send the command to get temperature readings 
+Serial.print("Temp: "); 
+temp = DallasA.getTempCByIndex(0);Serial.println(temp2);
+Serial.println(temp); 
+   delay(1000); 
+} //loop
+//*****   Funcion Temp  ******* 
+
+
+
+
+
