@@ -1,4 +1,9 @@
 Medicion de voltaje:
+A0---27K----<
+  | 
+100K
+  |
+ Gnd
 
 float Voltaje = 0.0;
 
