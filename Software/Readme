@@ -1,7 +1,7 @@
 Medicion de voltaje:
 A0---27K----<
   | 
-100K
+10K
   |
  Gnd
 
