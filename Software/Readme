@@ -1,14 +1,16 @@
 Medicion de voltaje:
-A0---27K----<
+A0---24K----<
   | 
 10K
   |
  Gnd
+Mide maximo 11V  ya que 11/(24+10) da unos 3,2v a la entrada del NodeMCU (que ya tiene divisor resistivo con un maximo de 3,3v)
+
 
 float Voltaje = 0.0;
 
-int valor = analogRead(A0);
-Voltaje = (valor * 5.0) / 1024.0; // deberia multiplicarse valor *10 considerando divisor resistivo (/2) si se mide panel solar (mas de 5V)
+float valor = analogRead(A0);  // si bien se lee un int, "valor" debe ser float para que la division tambien quede en float
+Voltaje = (valor * 10.8) / 1024.0; // la R es de 10K  pero se multiplica por 10.8 para corregir diferencia de valor
    if (Voltaje < 0.1) 
    {     Voltaje=0.0;   } 
 
