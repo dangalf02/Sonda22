@@ -36,7 +36,8 @@ vPanel 01
 Nco2uh2GaaXbsOcXAGot
 curl -v -X POST -d "{\"VPanel01\": 10}" https://demo.thingsboard.io/api/v1/Nco2uh2GaaXbsOcXAGot/telemetry --header "Content-Type:application/json"
 
-
+Panel Sofi (Public)
+https://demo.thingsboard.io/dashboard/e55af640-0472-11ed-b0a3-db9fa717ad10?publicId=3e6c19b0-0475-11ed-b0a3-db9fa717ad10
 
 
 
