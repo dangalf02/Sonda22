@@ -1,0 +1,6 @@
+DC{
+ Medicion de temp y humedad con DHT11 conectado a NodeMCU
+ Prestar atencion al pinout ya que no concuerdan los nombres en la placa con los de la programacion Arduino
+ Ej: el pin D3 es el GPIO0   el pin D5 es el GPIO14  (revisar imagen de pinout en esta carpeta)
+ Mide ambos valores y muestra por Serial,   NO intenta comunicacion por WiFi
+}
