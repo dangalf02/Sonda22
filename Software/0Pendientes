@@ -13,5 +13,5 @@ Enviar valores continuos (Acelerometro)  y valor maximo para todos los ejes (Ace
    
 ******** Temp / Humedad
 Probar libreria DHTEsp y enviar data a Thingsboard
-
+Axel:  DHT22  Token mvhhwsFx43lvedStPBqT
 
