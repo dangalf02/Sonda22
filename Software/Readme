@@ -35,8 +35,15 @@ https://demo.thingsboard.io/dashboard/87ac6c40-edcf-11ec-a900-4f6af7758cb5?publi
 Temp
 curl -v -X POST -d "{\"TempTest01\": 25}" https://demo.thingsboard.io/api/v1/gjmhlFJzDQzn20oEFmX1/telemetry --header "Content-Type:application/json"
 
-Voltaje  dj4CkDAnyLDgtVcgcBtI
+Sonda22 
+Dispositivo PSonda22  alias Sonda22  Token  dj4CkDAnyLDgtVcgcBtI
 curl -v -X POST -d "{\"Voltaje\": 10}" https://demo.thingsboard.io/api/v1/dj4CkDAnyLDgtVcgcBtI/telemetry --header "Content-Type:application/json"
+curl -v -X POST -d "{\"RPM\": 10}" https://demo.thingsboard.io/api/v1/dj4CkDAnyLDgtVcgcBtI/telemetry --header "Content-Type:application/json"
+
+Dispositivo Servo01 con alias ServoSolar (Servo, voltaje, temperatura)  token eOYUh7lDt2kMDZnE8Wuy
+curl -v -X POST -d "{\"voltaje\": 6}" https://demo.thingsboard.io/api/v1/eOYUh7lDt2kMDZnE8Wuy/telemetry --header "Content-Type:application/json"
+
+
 
 HTTP POST: {"Voltaje": 10}" https://demo.thingsboard.io/api/v1/dj4CkDAnyLDgtVcgcBtI/telemetry --header"Content-Type:application/json"
 
