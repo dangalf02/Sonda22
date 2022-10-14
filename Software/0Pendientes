@@ -1,0 +1,17 @@
+****  PENDIENTES  ******
+
+*********** SondaPanel.ino  *********
+Hacer rutina de movimiento de servo en funcion del parametro recibido (ver .ino)
+Leer analogico (voltaje)
+Leer Dallas (temperatura)
+
+*******  Acelerometro
+Data a Thingsboard   Sonda22   TOKEN "dj4CkDAnyLDgtVcgcBtI" 
+Enviar valores continuos (Acelerometro)  y valor maximo para todos los ejes (AcelMax)
+   Cada vez que se supere el max anterior enviar nuevo valor y guardar como MaxAnt
+   Si la G cae a 1 esperar 30seg y volver a tomar MaxAnt=1 para buscar un nuevo maximo
+   
+******** Temp / Humedad
+Probar libreria DHTEsp y enviar data a Thingsboard
+
+
