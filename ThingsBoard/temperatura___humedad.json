@@ -1,0 +1,230 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "charts",
+    "typeAlias": "basic_timeseries",
+    "type": "timeseries",
+    "title": "Timeseries Line Chart",
+    "sizeX": 16,
+    "sizeY": 10,
+    "row": 0,
+    "col": 2,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "7b0897ca-1180-4b1b-fc5d-a1dd2d01175c",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "DHT11_Temp",
+              "label": "Temp",
+              "type": "timeseries",
+              "color": "#f81a05",
+              "settings": {
+                "hideDataByDefault": false,
+                "disableDataHiding": false,
+                "removeFromLegend": false,
+                "excludeFromStacking": false,
+                "showLines": true,
+                "lineWidth": 2,
+                "fillLines": false,
+                "showPoints": false,
+                "showSeparateAxis": true,
+                "axisTitle": "Temp",
+                "axisMin": 20,
+                "axisMax": 35,
+                "axisPosition": "left",
+                "comparisonSettings": {
+                  "showValuesForComparison": true,
+                  "comparisonValuesLabel": "",
+                  "color": ""
+                },
+                "thresholds": []
+              },
+              "_hash": 0.07672918338940038,
+              "units": "C",
+              "decimals": 1,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null,
+              "aggregationType": null
+            }
+          ],
+          "latestDataKeys": null
+        },
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "7b0897ca-1180-4b1b-fc5d-a1dd2d01175c",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "DHT11_Hum",
+              "type": "timeseries",
+              "label": "DHT11_Hum 2",
+              "color": "#36cbf4",
+              "settings": {
+                "hideDataByDefault": false,
+                "disableDataHiding": false,
+                "removeFromLegend": false,
+                "excludeFromStacking": false,
+                "showLines": true,
+                "lineWidth": 2,
+                "fillLines": false,
+                "showPoints": false,
+                "showSeparateAxis": true,
+                "axisTitle": "Hum",
+                "axisMin": 50,
+                "axisMax": 90,
+                "axisPosition": "right",
+                "comparisonSettings": {
+                  "showValuesForComparison": true,
+                  "comparisonValuesLabel": "",
+                  "color": "#c72d2d"
+                },
+                "thresholds": []
+              },
+              "_hash": 0.03451819036083226,
+              "aggregationType": null,
+              "units": "%",
+              "decimals": null,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null
+            }
+          ],
+          "latestDataKeys": []
+        }
+      ],
+      "timewindow": {
+        "hideInterval": false,
+        "hideLastInterval": false,
+        "hideQuickInterval": false,
+        "hideAggregation": false,
+        "hideAggInterval": false,
+        "hideTimezone": false,
+        "selectedTab": 0,
+        "realtime": {
+          "realtimeType": 0,
+          "timewindowMs": 1800000,
+          "quickInterval": "CURRENT_DAY",
+          "interval": 1000
+        },
+        "aggregation": {
+          "type": "NONE",
+          "limit": 2500
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "rgba(0,0,0,0)",
+      "color": "#d3d0ce",
+      "padding": "0",
+      "settings": {
+        "stack": false,
+        "fontSize": 9,
+        "fontColor": "#545454",
+        "showTooltip": true,
+        "tooltipIndividual": true,
+        "tooltipCumulative": false,
+        "hideZeros": true,
+        "grid": {
+          "verticalLines": true,
+          "horizontalLines": true,
+          "outlineWidth": 1,
+          "color": "#bfbfbf",
+          "backgroundColor": null,
+          "tickColor": "#535353"
+        },
+        "xaxis": {
+          "title": null,
+          "showLabels": true,
+          "color": "#eae3e3"
+        },
+        "yaxis": {
+          "min": 20,
+          "max": 38,
+          "title": null,
+          "showLabels": true,
+          "color": "#ffffff",
+          "tickSize": null,
+          "tickDecimals": 1,
+          "ticksFormatter": ""
+        },
+        "shadowSize": 1,
+        "smoothLines": true,
+        "comparisonEnabled": false,
+        "xaxisSecond": {
+          "axisPosition": "top",
+          "title": null,
+          "showLabels": true
+        },
+        "customLegendEnabled": false
+      },
+      "title": "TEMPERATURA / HUMEDAD",
+      "dropShadow": false,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "mobileHeight": null,
+      "useDashboardTimewindow": false,
+      "displayTimewindow": false,
+      "showTitleIcon": false,
+      "titleTooltip": "",
+      "widgetStyle": {},
+      "widgetCss": "",
+      "pageSize": 1024,
+      "noDataDisplayMessage": "",
+      "showLegend": false,
+      "legendConfig": {
+        "direction": "column",
+        "position": "bottom",
+        "sortDataKeys": false,
+        "showMin": false,
+        "showMax": false,
+        "showAvg": true,
+        "showTotal": false
+      },
+      "decimals": 1
+    },
+    "id": "44456f7d-b6bc-0a4e-98ac-e41ec3550dea"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "Voltaje",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "b3077b40-ee02-11ec-a900-4f6af7758cb5"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "1": {
+        "alias": "Voltaje",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "b3077b40-ee02-11ec-a900-4f6af7758cb5"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 41,
+    "sizeY": 12
+  },
+  "originalColumns": 100
+}

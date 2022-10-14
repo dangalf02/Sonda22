@@ -1,0 +1,148 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "digital_gauges",
+    "typeAlias": "digital_vertical_bar",
+    "type": "latest",
+    "title": "New widget",
+    "image": null,
+    "description": null,
+    "sizeX": 2.5,
+    "sizeY": 4.5,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "name": null,
+          "entityAliasId": "7b0897ca-1180-4b1b-fc5d-a1dd2d01175c",
+          "filterId": null,
+          "dataKeys": [
+            {
+              "name": "DHT11_Temp",
+              "type": "timeseries",
+              "label": "DHT11_Temp",
+              "color": "#ff0138",
+              "settings": {},
+              "_hash": 0.5349478770103852,
+              "aggregationType": "NONE",
+              "units": "C",
+              "decimals": 1,
+              "funcBody": null,
+              "usePostProcessing": null,
+              "postFuncBody": null
+            }
+          ]
+        }
+      ],
+      "timewindow": {
+        "displayValue": "",
+        "selectedTab": 0,
+        "realtime": {
+          "realtimeType": 1,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "quickInterval": "CURRENT_DAY"
+        },
+        "history": {
+          "historyType": 0,
+          "interval": 1000,
+          "timewindowMs": 60000,
+          "fixedTimewindow": {
+            "startTimeMs": 1665443088983,
+            "endTimeMs": 1665529488983
+          },
+          "quickInterval": "CURRENT_DAY"
+        },
+        "aggregation": {
+          "type": "AVG",
+          "limit": 2500
+        }
+      },
+      "showTitle": false,
+      "backgroundColor": "#000000",
+      "color": "rgba(255,255,255,0.87)",
+      "padding": "0px",
+      "settings": {
+        "minValue": 20,
+        "maxValue": 38,
+        "gaugeType": "verticalBar",
+        "defaultColor": "#f8f8f8",
+        "gaugeWidthScale": 1.5,
+        "neonGlowBrightness": 0,
+        "dashThickness": 2,
+        "roundedLineCap": false,
+        "gaugeColor": "#171a1c",
+        "useFixedLevelColor": false,
+        "levelColors": [
+          "#a6fe3d",
+          "#ff0000"
+        ],
+        "showTitle": false,
+        "showUnitTitle": false,
+        "showTimestamp": false,
+        "showValue": true,
+        "valueFont": {
+          "family": "Segment7Standard",
+          "size": 14,
+          "style": "normal",
+          "weight": "500",
+          "color": "#faf9f9"
+        },
+        "showMinMax": true,
+        "minMaxFont": {
+          "family": "Segment7Standard",
+          "size": 12,
+          "style": "oblique",
+          "weight": "500",
+          "color": "#cccccc"
+        },
+        "showTicks": false,
+        "animation": true,
+        "animationDuration": 500,
+        "animationRule": "linear"
+      },
+      "title": "Temp",
+      "dropShadow": true,
+      "enableFullscreen": false,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "widgetStyle": {},
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {},
+      "widgetCss": "",
+      "pageSize": 1024,
+      "decimals": 8,
+      "noDataDisplayMessage": ""
+    },
+    "row": 0,
+    "col": 0,
+    "id": "34abe6ff-f6ce-e01f-7956-2672661626d3"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "Voltaje",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "b3077b40-ee02-11ec-a900-4f6af7758cb5"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "filtersInfo": {
+    "datasourceFilters": {}
+  },
+  "originalSize": {
+    "sizeX": 7,
+    "sizeY": 12
+  },
+  "originalColumns": 100
+}
