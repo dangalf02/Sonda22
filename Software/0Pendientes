@@ -10,6 +10,8 @@ Data a Thingsboard   Sonda22   TOKEN "dj4CkDAnyLDgtVcgcBtI"
 Enviar valores continuos (Acelerometro)  y valor maximo para todos los ejes (AcelMax)
    Cada vez que se supere el max anterior enviar nuevo valor y guardar como MaxAnt
    Si la G cae a 1 esperar 30seg y volver a tomar MaxAnt=1 para buscar un nuevo maximo
+       Si G =1 NO mandar Maximo, asi en el panel queda el ultimo registrado
+       Cuando G vuelva a cambiar, envia maximo y cambia el panel
    
 ******** Temp / Humedad
 Probar libreria DHTEsp y enviar data a Thingsboard
