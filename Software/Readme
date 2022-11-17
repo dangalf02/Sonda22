@@ -29,6 +29,7 @@ https://demo.thingsboard.io/dashboard/9fb8a040-3afc-11ed-b827-c9be76c6f5d7?publi
 
 Dani Publico
 https://demo.thingsboard.io/dashboard/87ac6c40-edcf-11ec-a900-4f6af7758cb5?publicId=78ec4d30-edd2-11ec-a900-4f6af7758cb5
+bit.ly/3g7Nr73
 
 Temp
 curl -v -X POST -d "{\"TempTest01\": 25}" https://demo.thingsboard.io/api/v1/gjmhlFJzDQzn20oEFmX1/telemetry --header "Content-Type:application/json"
