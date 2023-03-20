@@ -20,7 +20,7 @@ Voltaje = (valor * 10.8) / 1024.0; // la R es de 10K  pero se multiplica por 10.
 Datos en Web:
 https://thingspeak.com/
 
-https://thingsboard.io    dacom@   Puerta18$
+https://thingsboard.io    dacom@   
 https://demo.thingsboard.io/api/noauth/activate?activateToken=XwG2D5tvoc5V8mrFbfnFQw1B6JS0qr
 
 Sonda22  publico (bajo dacom@)
